@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Página informativa sobre la cultura japonesa, sus tradiciones, gastronomía y lugares turísticos.">
+
+<title> Raices de Japon </title>
+
+   <link rel="stylesheet" href="estilos.css">
+</head>
+    <body>
+
+<header class="encabezado">
+    <img src="imagen/logo_Raices de Japon.png" alt="Logo del sitio web Raíces de Japón con un torii y elementos tradicionales" class="logo">
+    <h1>Raíces de Japón</h1>
+
+    <div class="idioma">
+
+    <label for="idioma">idioma:</label>
+
+<select id="idioma" name="idioma">
+    <option>Español</option>
+    <option>Inglés</option>
+</select>
+</div>  
+
+</header>
+
+
+<nav>
+<ul class="menu">
+
+<li><a href="index.html">Inicio</a></li>
+
+<li class="desplegable">
+    <a href="#">Cultura ▼</a>
+
+    <ul class="submenu">
+        <li><a href="festivales.html">Festivales</a></li>
+        <li><a href="gastronomia.html">Gastronomía</a></li>
+        <li><a href="tradiciones.html">Tradiciones</a></li>
+    </ul>
+
+</li>
+
+</ul>
+</nav>
+
+
+<main>
+
+<section class="imagen-principal">
+    <div class="slider">
+        <img id="imagenSlider" src="imagen/monte-fuji.jpg" alt="Paisaje de Japón">
+
+        <div class="botones">
+            <button onclick="anterior()">⟨</button>
+            <button onclick="siguiente()">⟩</button>
+        </div>
+
+    </div>
+
+<section class="bienvenida">
+
+    <h2>Bienvenidos a las Raíces de Japón</h2>
+
+        <p id="mensajePagina"></p>
+
+<p>
+    Esta página web explora las tradiciones, festivales y la gastronomía de Japón,
+    destacando la riqueza cultural de uno de los países más fascinantes del mundo.
+</p>
+
+<!---Boton intercativo--->
+<button onclick="mostrarMensaje()">Haz clic para recibir un mensaje</button>
+
+<!---Texto Dinamico--->
+<p id="texto">Descubre la cultura japonesa</p>
+<button onclick="cambiarTexto()">cambiar mensaje</button>
+
+</section>
+
+<section class="menu-secciones">
+
+    <a href="festivales.html" class="boton">Festivales</a>
+    <a href="gastronomia.html" class="boton">Gastronomía</a>
+    <a href="tradiciones.html" class="boton">Tradiciones</a>
+
+</section>
+<!---fecha automatica--->
+<p id="fecha"></p>
+
+<section class="formulario">
+  <h2>Contáctanos</h2>
+
+  <form id="formulario">
+
+    <label>Nombre:</label>
+    <input type="text" id="nombre" required>
+
+    <label>Correo:</label>
+    <input type="email" id="correo" required>
+
+    <label>Mensaje:</label>
+    <textarea id="mensaje" required></textarea>
+
+    <button type="submit">Enviar</button>
+
+  </form>
+
+  <p id="mensajeError" style="color:red;"></p>
+  <p id="mensajeExito" style="color:green;"></p>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 Raíces de Japón</p>
+</footer>
+
+<script src="script.js"></script>
+    
+</body>
+</html>
